@@ -56,7 +56,8 @@ public class make_up extends Fragment {
             }
         }).start();
 
-
+        Intent intent=new Intent(getContext(), makeUp.class);
+        startActivity(intent);
 
 
         return root;
