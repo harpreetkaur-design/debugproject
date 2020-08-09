@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.epharma.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_medicine"
+        android:name="com.example.epharma.ui.medicine.medicine"
+        android:label="Medicine"
+        tools:layout="@layout/fragment_medicine" />
+
+    <fragment
+        android:id="@+id/nav_skin_care"
+        android:name="com.example.epharma.ui.skin_care.skin_care"
+        android:label="Skin Care"
+        tools:layout="@layout/fragment_skin_care" />
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.epharma.ui.account.account"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.epharma.ui.contact_us.contact_us"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/nav_makeUp"
+        android:name="com.example.epharma.ui.make_up.make_up"
+        android:label="Make Up"
+        tools:layout="@layout/fragment_make_up" />
+    <fragment
+        android:id="@+id/nav_fragnance"
+        android:name="com.example.epharma.ui.fragnance.fragnance"
+        android:label="Fragnance"
+        tools:layout="@layout/fragment_fragnance" />
+
+
+</navigation>
