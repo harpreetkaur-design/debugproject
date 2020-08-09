@@ -13,6 +13,8 @@
         <activity android:name=".allergicSystem" />
         <activity android:name=".nervousSystem" />
         <activity android:name=".cardivascularSystem" />
+        <activity android:name=".hairCare" />
+        <activity android:name=".makeUp" />
         <activity android:name=".digestiveSystem" />
         <activity android:name=".signUp" />
         <activity android:name=".customerLogIn" />

@@ -79,6 +79,21 @@ nervoussys.setOnClickListener(new View.OnClickListener() {
     }
 });
 
+makeupsystem.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent(getContext(), makeUp.class);
+        startActivity(intent);
+    }
+});
+
+haircaresystem.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent(getContext(), hairCare.class);
+        startActivity(intent);
+    }
+});
 
 
 

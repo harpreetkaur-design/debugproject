@@ -56,7 +56,8 @@ public class fragnance extends Fragment {
             }
         }).start();
 
-
+        Intent intent=new Intent(getContext(), hairCare.class);
+        startActivity(intent);
     return  root;
     }
 }
