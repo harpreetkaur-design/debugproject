@@ -19,4 +19,8 @@ public class customerLogIn extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goinsideApp(View view) {
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
 }

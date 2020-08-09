@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homeicon"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_medicine"
+            android:icon="@drawable/medicineic"
+            android:title="Medicine" />
+        <item
+            android:id="@+id/nav_skin_care"
+            android:icon="@drawable/skinic"
+            android:title="Skin Care" />
+
+        <item
+            android:id="@+id/nav_fragnance"
+            android:icon="@drawable/hairic"
+            android:title="Hair Care" />
+        <item
+            android:id="@+id/nav_makeUp"
+            android:icon="@drawable/makeupic"
+            android:title="Make Up" />
+
+
+
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account"
+            android:title="Account" />
+
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact"
+            android:title="Contact" />
+    </group>
+</menu>
