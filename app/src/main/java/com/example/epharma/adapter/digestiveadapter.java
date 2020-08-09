@@ -51,6 +51,18 @@ holder.digestmedicinecost.setText(cst.get(position));
 holder.digestmedicineacid.setText(acd.get(position));
         holder.digestmedicineimage.setImageResource(img.get(position));
 
+        holder.diglayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context.getApplicationContext(),productOpened.class);
+                intent.putExtra("pname",holder.digestmedicinename.getText().toString());
+                intent.putExtra("pacid",holder.digestmedicineacid.getText().toString());
+                intent.putExtra("pcost",holder.digestmedicinecost.getText().toString());
+                context.startActivity(intent);
+
+            }
+        });
+
 
     }
 

@@ -95,7 +95,13 @@ haircaresystem.setOnClickListener(new View.OnClickListener() {
     }
 });
 
-
+skincaresystem.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent(getContext(), skinCare.class);
+        startActivity(intent);
+    }
+});
 
 
         return root;

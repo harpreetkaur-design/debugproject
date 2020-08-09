@@ -13,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.epharma.R;
+import com.example.epharma.paymentSection;
+import com.example.epharma.productOpened;
 
 import java.util.List;
 
@@ -51,7 +53,17 @@ Context context;
         holder.respiratorymedicineimage.setImageResource(img.get(position));
 
 
+        holder.resplayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context.getApplicationContext(), productOpened.class);
+                intent.putExtra("pname",holder.respiratorymedicinename.getText().toString());
+                intent.putExtra("pacid",holder.respiratorymedicineacid.getText().toString());
+                intent.putExtra("pcost",holder.respiratorymedicinecost.getText().toString());
+                context.startActivity(intent);
 
+            }
+        });
 
 
     }

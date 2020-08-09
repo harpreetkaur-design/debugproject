@@ -18,14 +18,14 @@ import com.example.epharma.productOpened;
 
 import java.util.List;
 
-public class adaptercardivascular extends RecyclerView.Adapter<adaptercardivascular.ViewHolder>{
+public class adapterskincare extends RecyclerView.Adapter<adapterskincare.ViewHolder>{
 Context context;
     List<String> nm;
     List<String> cst;
     List<String> acd;
     List<Integer> img;
 
-    public adaptercardivascular(Context context, List<String> nm,List<String> cst,List<String> acd,List<Integer> img) {
+    public adapterskincare(Context context,  List<String> nm,List<String> cst,List<String> acd,List<Integer> img) {
         this.context=context;
         this.nm=nm;
         this.cst=cst;
@@ -37,31 +37,31 @@ Context context;
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View listItem= layoutInflater.inflate(R.layout.itemscardivascular, parent, false);
+        View listItem= layoutInflater.inflate(R.layout.itemsskincare, parent, false);
 
-      ViewHolder holder=new ViewHolder(listItem);
-      return holder;
+       ViewHolder holder=new ViewHolder(listItem);
+
+        return holder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
-        holder.cardimedicinename.setText(nm.get(position));
-        holder.cardimedicinecost.setText(cst.get(position));
-        holder.cardimedicineacid.setText(acd.get(position));
-        holder.cardimedicineimage.setImageResource(img.get(position));
+        holder.skinname.setText(nm.get(position));
+        holder.skincost.setText(cst.get(position));
+        holder.skinacid.setText(acd.get(position));
+        holder.skinimage.setImageResource(img.get(position));
 
-        holder.cardilayout.setOnClickListener(new View.OnClickListener() {
+        holder.skinlayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(context.getApplicationContext(), productOpened.class);
-                intent.putExtra("pname",holder.cardimedicinename.getText().toString());
-                intent.putExtra("pacid",holder.cardimedicineacid.getText().toString());
-                intent.putExtra("pcost",holder.cardimedicinecost.getText().toString());
+                intent.putExtra("pname",holder.skinname.getText().toString());
+                intent.putExtra("pacid",holder.skinacid.getText().toString());
+                intent.putExtra("pcost",holder.skincost.getText().toString());
                 context.startActivity(intent);
 
             }
         });
-
 
     }
 
@@ -71,19 +71,20 @@ Context context;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-
-        TextView cardimedicinename,cardimedicineacid,cardimedicinecost;
-        ImageView cardimedicineimage;
-LinearLayout cardilayout;
+        ImageView skinimage;
+        TextView skinname,skinacid,skincost;
+LinearLayout skinlayout;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            cardimedicineimage=itemView.findViewById(R.id.cardimedicineimage);
-            cardimedicinename=itemView.findViewById(R.id.cardimedicinename);
-            cardimedicinecost=itemView.findViewById(R.id.cardimedicinecost);
-            cardimedicineacid=itemView.findViewById(R.id.cardimedicineacid);
 
-            cardilayout=itemView.findViewById(R.id.cardilayout);
+            skinimage=itemView.findViewById(R.id.skincareimage);
+            skinname=itemView.findViewById(R.id.skincarename);
+            skinacid=itemView.findViewById(R.id.skincareacid);
+            skincost=itemView.findViewById(R.id.skincarecost);
+            skinlayout=itemView.findViewById(R.id.skinlayout);
+
 
         }
     }
+
 }

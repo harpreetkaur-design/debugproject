@@ -13,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.epharma.R;
+import com.example.epharma.paymentSection;
+import com.example.epharma.productOpened;
 
 import java.util.List;
 
@@ -48,7 +50,17 @@ Context context;
         holder.nervousmedicineacid.setText(acd.get(position));
         holder.nervousmedicineimage.setImageResource(img.get(position));
 
+        holder.nervousplayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context.getApplicationContext(), productOpened.class);
+                intent.putExtra("pname",holder.nervousmedicinename.getText().toString());
+                intent.putExtra("pacid",holder.nervousmedicineacid.getText().toString());
+                intent.putExtra("pcost",holder.nervousmedicinecost.getText().toString());
+                context.startActivity(intent);
 
+            }
+        });
 
 
     }

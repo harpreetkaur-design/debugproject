@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-
+import androidx.lifecycle.ViewModelProviders;
 import com.example.epharma.*;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -14,6 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.epharma.R;
+import com.example.epharma.skinCare;
 import com.example.epharma.ui.skin_care.SlideshowViewModel;
 
 

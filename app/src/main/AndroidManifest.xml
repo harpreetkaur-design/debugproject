@@ -9,12 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".deleiveryDone"></activity>
+        <activity android:name=".paymentSection" />
+        <activity android:name=".productOpened" />
         <activity android:name=".respiratorySystem" />
         <activity android:name=".allergicSystem" />
         <activity android:name=".nervousSystem" />
         <activity android:name=".cardivascularSystem" />
         <activity android:name=".hairCare" />
         <activity android:name=".makeUp" />
+        <activity android:name=".skinCare" />
         <activity android:name=".digestiveSystem" />
         <activity android:name=".signUp" />
         <activity android:name=".customerLogIn" />

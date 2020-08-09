@@ -55,7 +55,8 @@ public class skin_care extends Fragment {
             }
         }).start();
 
-
+        Intent intent=new Intent(getContext(),skinCare.class);
+        startActivity(intent);
 
 
         return root;
