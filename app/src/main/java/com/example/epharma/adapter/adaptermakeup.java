@@ -13,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.epharma.R;
+import com.example.epharma.paymentSection;
+import com.example.epharma.productOpened;
 
 import java.util.List;
 
@@ -51,6 +53,17 @@ public class adaptermakeup extends RecyclerView.Adapter<adaptermakeup.ViewHolder
         holder.makeupacid.setText(acd.get(position));
         holder.makeupimage.setImageResource(img.get(position));
 
+        holder.makeuplayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context.getApplicationContext(), productOpened.class);
+                intent.putExtra("pname",holder.makeupname.getText().toString());
+                intent.putExtra("pacid",holder.makeupacid.getText().toString());
+                intent.putExtra("pcost",holder.makeupcost.getText().toString());
+                context.startActivity(intent);
+
+            }
+        });
 
 
     }

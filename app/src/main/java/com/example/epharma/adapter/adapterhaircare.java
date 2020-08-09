@@ -13,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.epharma.R;
+import com.example.epharma.paymentSection;
+import com.example.epharma.productOpened;
 
 import java.util.List;
 
@@ -50,7 +52,17 @@ public class adapterhaircare extends RecyclerView.Adapter<adapterhaircare.ViewHo
         holder.haircareacid.setText(acd.get(position));
         holder.haircareimage.setImageResource(img.get(position));
 
+        holder.haircarelayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context.getApplicationContext(), productOpened.class);
+                intent.putExtra("pname",holder.haircarename.getText().toString());
+                intent.putExtra("pacid",holder.haircareacid.getText().toString());
+                intent.putExtra("pcost",holder.haircarecost.getText().toString());
+                context.startActivity(intent);
 
+            }
+        });
 
 
     }

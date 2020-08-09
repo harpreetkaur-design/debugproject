@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productOpened">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrolling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:alpha="1"
+            android:background="@drawable/editwithboder"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="gotomain"
+                    android:src="@drawable/back" />
+
+
+                <TextView
+                    android:layout_width="308dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="Details Of Selected Product"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/pharma" />
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/productimage"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/editwithboder"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/paracetamol">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/changepic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:background="@drawable/editwithboder"
+                android:text="Product Information"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name" />
+
+                <TextView
+                    android:id="@+id/productname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paracetamol"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Acid" />
+
+                <TextView
+                    android:id="@+id/productacid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="paracetanyx"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Cost" />
+
+                <TextView
+                    android:id="@+id/productcost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 20 per 10 Tablet"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dosage Information" />
+
+                <TextView
+                    android:id="@+id/phnnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="For Dosage Information and Related Effects Information, Please Contact your Doctor"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/changePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="gotopaymentsection"
+                android:layout_marginBottom="150dp"
+                android:drawableRight="@drawable/navigatenext"
+                android:background="@drawable/editwithboder"
+                android:text="Proceed To Checkout" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+

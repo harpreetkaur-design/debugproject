@@ -8,11 +8,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
+import com.example.epharma.*;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.epharma.R;
+import com.example.epharma.paymentSection;
 
 import java.util.List;
 
@@ -47,7 +48,18 @@ ViewHolder holder=new ViewHolder(listItem);
         holder.allergicmedicinecost.setText(cst.get(position));
         holder.allergicmedicineacid.setText(acd.get(position));
         holder.allergicmedicineimage.setImageResource(img.get(position));
+        holder.allergiclayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context.getApplicationContext(), productOpened.class);
+                intent.putExtra("pname",holder.allergicmedicinename.getText().toString());
+                intent.putExtra("pacid",holder.allergicmedicineacid.getText().toString());
+                intent.putExtra("pcost",holder.allergicmedicinecost.getText().toString());
 
+                context.startActivity(intent);
+
+            }
+        });
 
     }
 
