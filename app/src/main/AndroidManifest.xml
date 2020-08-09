@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".respiratorySystem" />
+        <activity android:name=".allergicSystem" />
+        <activity android:name=".nervousSystem" />
+        <activity android:name=".cardivascularSystem" />
+        <activity android:name=".digestiveSystem" />
         <activity android:name=".signUp" />
         <activity android:name=".customerLogIn" />
         <activity android:name=".MainActivity" />

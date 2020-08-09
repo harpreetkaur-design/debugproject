@@ -6,9 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+import com.example.epharma.digestiveSystem;
+import com.example.epharma.*;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.epharma.R;
@@ -32,6 +37,48 @@ public class medicine extends Fragment {
         respiratorylayout=root.findViewById(R.id.resplayout);
 
 
- return root;
+
+        digestivesystem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(getContext(), digestiveSystem.class);
+                startActivity(intent);
+            }
+        });
+
+        cardilayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), cardivascularSystem.class);
+                startActivity(intent);
+            }
+        });
+
+        nervouslayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), nervousSystem.class);
+                startActivity(intent);
+            }
+        });
+
+        allergiclayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), allergicSystem.class);
+                startActivity(intent);
+            }
+        });
+
+        respiratorylayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), respiratorySystem.class);
+                startActivity(intent);
+            }
+        });
+
+        return root;
     }
 }
