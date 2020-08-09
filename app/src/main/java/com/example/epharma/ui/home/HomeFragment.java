@@ -39,6 +39,49 @@ public class HomeFragment extends Fragment {
         skincaresystem=root.findViewById(R.id.skincaresys);
 
 
+        digestivesys.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), digestiveSystem.class);
+                startActivity(intent);
+
+            }
+        });
+respisys.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent(getContext(), respiratorySystem.class);
+        startActivity(intent);
+    }
+});
+
+cardisys.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent(getContext(), cardivascularSystem.class);
+        startActivity(intent);
+    }
+});
+
+allergicsys.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent(getContext(), allergicSystem.class);
+        startActivity(intent);
+    }
+});
+
+nervoussys.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent(getContext(), nervousSystem.class);
+        startActivity(intent);
+    }
+});
+
+
+
+
 
         return root;
     }
