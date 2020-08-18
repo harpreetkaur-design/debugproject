@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context=".customerLogIn">
+    tools:context=".admin.adminLogIn">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="#00131212"
-            android:text="Welcome To E-Pharmacy"
+            android:text="Admin Login Section"
             android:layout_centerHorizontal="true"
             android:textColor="@color/colorPrimary"
             android:layout_below="@id/image"
@@ -85,7 +85,7 @@
             android:layout_below="@id/pass"
             android:background="@drawable/button"
             android:text="Login"
-            android:onClick="goinsideApp"
+            android:onClick="insideadmin"
             android:textColor="@color/colorPrimary"
             android:textColorHighlight="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
@@ -93,20 +93,6 @@
 
 
 
-        <TextView
-            android:id="@+id/signup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            android:layout_below="@id/login"
-            android:text="Sign Up"
-            android:onClick="gotosignup"
-            android:textColor="@color/colorPrimary"
-            android:textColorHighlight="@color/colorPrimary"
-            android:textColorHint="@color/colorPrimary"
-            android:textColorLink="@color/colorPrimary"
-            android:gravity="center_horizontal" />
 
 
 

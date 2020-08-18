@@ -1,7 +1,7 @@
 package com.example.epharma;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.epharma.*;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -32,7 +32,7 @@ public class splash extends AppCompatActivity {
                     @Override
                     public void run() {
                         finish();
-                        Intent i = new Intent(splash.this, customerLogIn.class);
+                        Intent i = new Intent(splash.this, chooseSection.class);
                         startActivity(i);
 
                     }
