@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.additionOfProduct">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="272dp"
+                android:layout_height="107dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/logo" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Add New Product"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+
+            <EditText
+                android:id="@+id/pname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:hint="Product Name"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/pacid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:hint="Product Acid"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/pcost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
+                android:hint="Product Price"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColorHint="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/editwithboder"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/tresemme"/>
+
+
+            <Button
+                android:id="@+id/uploadimg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:onClick="uploadimage"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button"
+                android:text="Upload Product Image"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/addition"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:onClick="additem"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button"
+                android:text="Add Product"
+                android:textColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -106,7 +106,7 @@
                 android:textColorHint="@color/colorPrimary" />
 
             <EditText
-                android:id="@+id/apt"
+                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -177,6 +177,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
+                android:onClick="createaccount"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button"
                 android:text="Create My Account"

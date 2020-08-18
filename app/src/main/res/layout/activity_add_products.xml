@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.addProducts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit"
+                    android:drawableLeft="@drawable/navigationdown"
+                    android:drawableRight="@drawable/navigationdown"
+                    android:gravity="center"
+                    android:text="Add Products To The Database"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/dgss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="adddigestive"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit"
+                    android:drawableRight="@drawable/navigatenext"
+                    android:gravity="center|left"
+                    android:text="Digestive System"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cardilayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="addcardi"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:background="@drawable/edit"
+                    android:drawableRight="@drawable/navigatenext"
+                    android:gravity="center|left"
+                    android:text="Cardivascular System" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nervouslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="addnervous"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/navigatenext"
+                    android:gravity="center|left"
+                    android:text="Nervous System" />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/resplayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="addrespiratory"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/navigatenext"
+                    android:gravity="center|left"
+                    android:text="respiratory System" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/allergiclayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="adddallergic"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/navigatenext"
+                    android:gravity="center|left"
+                    android:text="For Allergic Disorders" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/haircareProduct"
+                android:onClick="addhaircare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/navigatenext"
+                    android:gravity="center|left"
+                    android:text="Hair Care" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/skincareproduct"
+                android:onClick="addskin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/navigatenext"
+                    android:gravity="center|left"
+                    android:text="Skin Care" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/makeupProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addmakeup"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/editwithboder"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/navigatenext"
+                    android:gravity="center|left"
+                    android:text="Make Up" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

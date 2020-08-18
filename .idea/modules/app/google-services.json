@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "537008361808",
+    "firebase_url": "https://epharma-62235.firebaseio.com",
+    "project_id": "epharma-62235",
+    "storage_bucket": "epharma-62235.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537008361808:android:35aeeeb528e80c73a21c55",
+        "android_client_info": {
+          "package_name": "com.example.epharma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537008361808-ck7l217mqfvhjgq1c15v5pqpjbhncs5s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.epharma",
+            "certificate_hash": "a1c13f902cc30b407f49ac7a530990e961ae3f65"
+          }
+        },
+        {
+          "client_id": "537008361808-bun7es60ld0euq1kn7gh359scudrn35u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEzYQaNv_GbWXKTCpDaAAnlvLI7NwwoqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537008361808-bun7es60ld0euq1kn7gh359scudrn35u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
