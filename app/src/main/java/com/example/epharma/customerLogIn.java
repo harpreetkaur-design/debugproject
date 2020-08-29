@@ -2,7 +2,7 @@ package com.example.epharma;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.epharma.enteredMail;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -36,6 +36,7 @@ public class customerLogIn extends AppCompatActivity {
     }
 
     public void goinsideApp(View view) {
+
         mAuth.signInWithEmailAndPassword(mail.getText().toString(), password.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -44,8 +45,10 @@ public class customerLogIn extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                           Intent intent =new Intent(customerLogIn.this,MainActivity.class);
-                           startActivity(intent);
+                            Intent intent =new Intent(customerLogIn.this,MainActivity.class);
+                            enteredMail.mailId=mail.getText().toString();
+                            intent.putExtra("usermail",mail.getText().toString());
+                            startActivity(intent);
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
@@ -55,6 +58,7 @@ public class customerLogIn extends AppCompatActivity {
 
                     }
                 });
+
 
 
     }
