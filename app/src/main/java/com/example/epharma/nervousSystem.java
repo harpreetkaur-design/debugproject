@@ -1,4 +1,9 @@
 package com.example.epharma;
+/**
+ * User Nervous Medicine Section
+ * @author Harpreet kaur and sahila
+
+ */
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -114,8 +119,9 @@ public class nervousSystem extends AppCompatActivity {
         mFirestoreList.setAdapter(adapter);
 
     }
-
-
+    /**
+     * go to main section home
+     */
     public void gotomain(View view) {
         Intent intent=new Intent(getApplicationContext(),MainActivity.class);
         startActivity(intent);

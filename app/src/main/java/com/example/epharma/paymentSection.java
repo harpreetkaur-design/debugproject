@@ -1,5 +1,8 @@
 package com.example.epharma;
-
+/**
+ * To add details of card and the adress
+ * @author Sahila karra
+ */
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -40,7 +43,9 @@ Spinner cardtype;
 
 
     }
-
+    /**
+     * go to final page of app shpping
+     */
     public void gotofinalpage(View view) {
         Intent intent=new Intent(getApplicationContext(),deleiveryDone.class);
         intent.putExtra("phone",phn.getText().toString());

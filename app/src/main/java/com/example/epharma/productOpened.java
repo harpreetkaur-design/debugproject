@@ -1,5 +1,8 @@
 package com.example.epharma;
-
+/**
+ * After open the product
+ * @author Manpreet
+ */
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -80,7 +83,9 @@ ImageView productimage;
 
 
     }
-
+    /**
+     * go to payment section
+     */
     public void gotopaymentsection(View view) {
         Intent intent=new Intent(getApplicationContext(),paymentSection.class);
         intent.putExtra("pname",productname.getText().toString());
@@ -88,7 +93,9 @@ ImageView productimage;
         intent.putExtra("pcost",productcost.getText().toString());
         startActivity(intent);
     }
-
+    /**
+     * go to home page
+     */
     public void gotomain(View view) {
         Intent intent=new Intent(getApplicationContext(),MainActivity.class);
         startActivity(intent);

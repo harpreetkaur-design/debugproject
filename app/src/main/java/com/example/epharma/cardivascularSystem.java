@@ -1,5 +1,10 @@
 package com.example.epharma;
 
+/**
+ * User cardivascular Medicine Section
+ * @author Harpreet kaur
+ */
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -116,6 +121,10 @@ public class cardivascularSystem extends AppCompatActivity {
         mFirestoreList.setAdapter(adapter);
 
     }
+
+    /**
+     * go to main section home
+     */
 
 
     public void gotomain(View view) {

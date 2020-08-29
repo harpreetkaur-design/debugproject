@@ -1,5 +1,8 @@
 package com.example.epharma;
-
+/**
+ * User Makeup Section
+ * @author rajan
+ */
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -116,7 +119,9 @@ public class makeUp extends AppCompatActivity {
 
     }
 
-
+    /**
+     * go to main section home
+     */
     public void gotomain(View view) {
         Intent intent=new Intent(getApplicationContext(),MainActivity.class);
         startActivity(intent);

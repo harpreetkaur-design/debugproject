@@ -1,5 +1,8 @@
 package com.example.epharma;
-
+/**
+ * Customer login page to go inside application
+ * @author harpreet kaur
+ */
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.epharma.enteredMail;
@@ -16,6 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+
 public class customerLogIn extends AppCompatActivity {
     EditText mail,password;
     private FirebaseAuth mAuth;
@@ -30,11 +34,17 @@ public class customerLogIn extends AppCompatActivity {
         password=findViewById(R.id.pass);
     }
 
+    /**
+     * go to registraion section
+     */
     public void gotosignup(View view) {
         Intent intent=new Intent(this,signUp.class);
         startActivity(intent);
     }
 
+    /**
+     * go to inside the app
+     */
     public void goinsideApp(View view) {
 
         mAuth.signInWithEmailAndPassword(mail.getText().toString(), password.getText().toString())

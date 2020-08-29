@@ -1,5 +1,8 @@
 package com.example.epharma.admin;
-
+/**
+ * admin: addtion of new product
+ * @author Manpreet kaur and sahilla karra
+ */
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

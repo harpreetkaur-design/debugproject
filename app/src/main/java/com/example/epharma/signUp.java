@@ -1,5 +1,8 @@
 package com.example.epharma;
-
+/**
+ * Sign Up Section
+ * @author Manpreet and harpreet
+ */
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -58,7 +61,9 @@ EditText email,password,firstname,lastname,number,address,postal,city,province,c
 
 
     }
-
+    /**
+     * Account creation
+     */
     public void createaccount(View view) {
 
 
@@ -93,7 +98,9 @@ EditText email,password,firstname,lastname,number,address,postal,city,province,c
                 });
 
     }
-
+    /**
+     * send to firebase database
+     */
     public  void tofirestore(){
         Users users=new Users(firstname.getText().toString(),lastname.getText().toString(),email.getText().toString(),
                 number.getText().toString(),address.getText().toString(),password.getText().toString(),

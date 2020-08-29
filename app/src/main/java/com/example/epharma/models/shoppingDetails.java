@@ -1,5 +1,8 @@
 package com.example.epharma.models;
-
+/**
+ * Pojo for shopping details
+ * @author Manpreet kaur
+ */
 public class shoppingDetails {
 
 

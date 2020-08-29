@@ -1,5 +1,8 @@
 package com.example.epharma.models;
-
+/**
+ * Pojo for product
+ * @author Manpreet kaur
+ */
 public class product {
 
     public String productname;
