@@ -2,6 +2,8 @@ package com.example.epharma;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -99,6 +101,8 @@ EditText email,password,firstname,lastname,number,address,postal,city,province,c
         db.collection("Users")
                 .document(finmail).set(users);
         Toast.makeText(getApplicationContext(),"Registraion Succesfull",Toast.LENGTH_LONG).show();
+        Intent intent=new Intent(this,customerLogIn.class);
+        startActivity(intent);
 
     }
 

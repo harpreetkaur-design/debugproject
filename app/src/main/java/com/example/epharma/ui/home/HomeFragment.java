@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.example.epharma.*;
@@ -23,6 +24,7 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
     Button digestivesys,respisys,nervoussys,allergicsys,cardisys;
     Button makeupsystem,haircaresystem,skincaresystem;
+    ImageView goback;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -37,6 +39,7 @@ public class HomeFragment extends Fragment {
         makeupsystem=root.findViewById(R.id.makeupsys);
         haircaresystem=root.findViewById(R.id.haircaresys);
         skincaresystem=root.findViewById(R.id.skincaresys);
+        goback=root.findViewById(R.id.goback);
 
 
         digestivesys.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +48,14 @@ public class HomeFragment extends Fragment {
                 Intent intent=new Intent(getContext(), digestiveSystem.class);
                 startActivity(intent);
 
+            }
+        });
+
+        goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), customerLogIn.class);
+                startActivity(intent);
             }
         });
 respisys.setOnClickListener(new View.OnClickListener() {
