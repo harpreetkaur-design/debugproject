@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,7 +16,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 
 import com.bumptech.glide.Glide;
 import com.example.epharma.models.product;
@@ -32,42 +32,42 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class hairCare extends AppCompatActivity {
+public class skinCare extends AppCompatActivity {
+
     RecyclerView mFirestoreList;
     FirebaseFirestore firebaseFirestore;
     FirestoreRecyclerAdapter adapter;
     FirebaseStorage firebaseStorage2;
     StorageReference storageReference2;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hair_care);
+        setContentView(R.layout.activity_skin_care);
         mFirestoreList=findViewById(R.id.recy);
         firebaseFirestore= FirebaseFirestore.getInstance();
         firebaseStorage2 = FirebaseStorage.getInstance();
         storageReference2 = firebaseStorage2.getReference();
 
 
-//QUERY
-        Query query=firebaseFirestore.collection("haircare");
+        //QUERY
+        Query query=firebaseFirestore.collection("skincare");
 
         //RECYCLER OPTIONS
         FirestoreRecyclerOptions<product> options=new FirestoreRecyclerOptions.Builder<product>()
                 .setQuery(query,product.class)
                 .build();
 
-        adapter= new FirestoreRecyclerAdapter<product, hairCare.ProductsViewHolder>(options) {
+        adapter= new FirestoreRecyclerAdapter<product, skinCare.ProductsViewHolder>(options) {
             @NonNull
             @Override
-            public hairCare.ProductsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.itemshaircare,parent,false);
-                return new hairCare.ProductsViewHolder(view);
+            public skinCare.ProductsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.itemsskincare,parent,false);
+                return new skinCare.ProductsViewHolder(view);
             }
 
             @Override
-            protected void onBindViewHolder(@NonNull final hairCare.ProductsViewHolder holder, int position, @NonNull final product model) {
+            protected void onBindViewHolder(@NonNull final skinCare.ProductsViewHolder holder, int position, @NonNull final product model) {
                 holder.productname.setText(model.getProductname());
                 holder.productacid.setText(model.getProductacid());
                 holder.productcost.setText(model.getProductcost());
@@ -81,7 +81,7 @@ public class hairCare extends AppCompatActivity {
                         Glide.with(getApplicationContext())
                                 .load(uri)
                                 .circleCrop()
-                                .into(holder.haircareimage);
+                                .into(holder.skincareimage);
 
 
                         // Toast.makeText(getContext(),"Success.",Toast.LENGTH_SHORT).show();
@@ -94,7 +94,7 @@ public class hairCare extends AppCompatActivity {
                     }
                 });
 
-                holder.hairlayout.setOnClickListener(new View.OnClickListener() {
+                holder.skinlayout.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent=new Intent(getApplicationContext(), productOpened.class);
@@ -122,16 +122,15 @@ public class hairCare extends AppCompatActivity {
 
     private class ProductsViewHolder extends RecyclerView.ViewHolder{
         TextView productname,productacid,productcost;
-        ImageView haircareimage;
-LinearLayout hairlayout;
+        ImageView skincareimage;
+LinearLayout skinlayout;
         public ProductsViewHolder(@NonNull View itemView) {
             super(itemView);
-            productname=itemView.findViewById(R.id.haircarename);
-            productacid=itemView.findViewById(R.id.haircareacid);
-            productcost=itemView.findViewById(R.id.haircarecost);
-            hairlayout=itemView.findViewById(R.id.haircarelayout);
-            haircareimage=itemView.findViewById(R.id.haircareimage);
-
+            productname=itemView.findViewById(R.id.skincarename);
+            productacid=itemView.findViewById(R.id.skincareacid);
+            productcost=itemView.findViewById(R.id.skincarecost);
+            skincareimage=itemView.findViewById(R.id.skincareimage);
+            skinlayout=itemView.findViewById(R.id.skinlayout);
         }
     }
 
@@ -146,4 +145,5 @@ LinearLayout hairlayout;
         super.onStart();
         adapter.startListening();
     }
+
 }
