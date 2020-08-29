@@ -1,5 +1,8 @@
 package com.example.epharma.admin;
-
+/**
+ * admin login section
+ * @author Rajan
+ */
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

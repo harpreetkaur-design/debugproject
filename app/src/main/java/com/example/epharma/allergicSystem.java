@@ -1,5 +1,10 @@
 package com.example.epharma;
 
+/**
+ * User Allergic Medicine Section
+ * @author Harpreet kaur
+ */
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -120,7 +125,9 @@ public class allergicSystem extends AppCompatActivity {
         mFirestoreList.setAdapter(adapter);
 
     }
-
+    /**
+     * go to main section home
+     */
 
     public void gotomain(View view) {
         Intent intent=new Intent(getApplicationContext(),MainActivity.class);

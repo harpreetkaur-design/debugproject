@@ -1,5 +1,8 @@
 package com.example.epharma;
-
+/**
+ * Sign Up Section
+ * @author Harpreet and manpreet
+ */
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.epharma.*;
 import android.content.Intent;

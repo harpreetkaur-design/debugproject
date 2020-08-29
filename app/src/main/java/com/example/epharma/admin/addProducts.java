@@ -1,5 +1,8 @@
 package com.example.epharma.admin;
-
+/**
+ * admin: add products from admin site
+ * @author Sahilla karra
+ */
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
