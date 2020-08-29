@@ -7,6 +7,29 @@
     android:orientation="vertical"
     tools:context=".chooseSection">
 
+    <ImageView
+        android:layout_width="272dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="75dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginLeft="85dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00131212"
+        android:gravity="center"
+        android:text="Choose Your Section"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/clientSide"
         android:layout_width="match_parent"

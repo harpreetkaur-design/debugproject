@@ -65,7 +65,7 @@
 
                 <EditText
                     android:id="@+id/phn"
-                    android:layout_width="match_parent"
+                    android:layout_width ="match_parent"
                     android:layout_height="wrap_content"
                     android:text=""
                     android:hint="Enter Contact Number here"
@@ -88,7 +88,7 @@
                     android:textStyle="bold"
                     android:text="Email Address" />
 
-                <EditText
+                <TextView
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
                     android:text="Address" />
 
                 <EditText
-                    android:id="@+id/lastnm"
+                    android:id="@+id/adress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -140,7 +140,7 @@
                     android:text="Postal Code" />
 
                 <EditText
-                    android:id="@+id/firstnm"
+                    android:id="@+id/postal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -164,7 +164,7 @@
                     android:text="City" />
 
                 <EditText
-                    android:id="@+id/contactnumber"
+                    android:id="@+id/city"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -191,6 +191,7 @@
                     android:text="Province" />
 
                 <EditText
+                    android:id="@+id/province"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -260,6 +261,7 @@
                     android:text="Card Number" />
 
                 <EditText
+                    android:id="@+id/cardnumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -285,6 +287,7 @@
                     android:text="Enter Cvv Here" />
 
                 <EditText
+                    android:id="@+id/cvv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text=""
