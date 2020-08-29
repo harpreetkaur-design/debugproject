@@ -52,6 +52,15 @@
                     android:onClick="returntohomepage"
                     android:text="Return To Home Page"
                     android:textColor="@android:color/black">
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/editwithboder"
+                    android:onClick="sendmail"
+                    android:text="send mail"
+                    android:textColor="@android:color/black">
 
                 </Button>
 

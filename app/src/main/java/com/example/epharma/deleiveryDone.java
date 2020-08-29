@@ -46,8 +46,41 @@ String pname,pacid,pcost;
                 .document(email).set(shoppingdet);
         Toast.makeText(getApplicationContext(),"Booking Succesfull",Toast.LENGTH_LONG).show();
 
+
     Intent intent=new Intent(getApplicationContext(),MainActivity.class);
 
         startActivity(intent);
+    }
+
+    public void sendmail(View view) {
+        Log.i("Send email", "");
+        String[] TO = {email};
+        String[] CC = {"shoping"};
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.setType("text/plain");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
+        emailIntent.putExtra(Intent.EXTRA_CC, CC);
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Booking");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "Shopping details" +
+                "email:" +email+
+                "phone: " +phone+
+                "adress: " +adress+
+                "postal: " +postal+
+                "city: " +city+
+                "province: " +province+
+                "product name: " +pname+
+                "product cost: " +pcost+
+                "product acid: "+pacid);
+
+        try {
+            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
+            finish();
+            Log.i("Finished sending", "");
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(deleiveryDone.this, "There is no email client installed.", Toast.LENGTH_SHORT).show();
+        }
+
     }
 }
